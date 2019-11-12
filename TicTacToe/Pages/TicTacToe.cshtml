@@ -1,0 +1,16 @@
+﻿@page
+@model TicTacToe.Pages.TicTacToeModel
+@{
+    ViewData["Title"] = "TicTacToe";
+}
+
+<h2>TicTacToe</h2>
+
+<p id="turn"></p>
+
+<div id="grid">
+    @for(int i = 0; i < 9; i++)
+    {
+        <div id="square-!i" class="square"></div>
+    }
+</div>
